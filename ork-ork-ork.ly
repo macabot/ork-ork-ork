@@ -7,7 +7,7 @@
 % 1. Define the Chords
 theChords = \chordmode {
   \set chordChanges = ##t
-  \repeat unfold 2 {
+  \repeat unfold 3 {
     g1 | c1 | a1:m | d1
   }
 }
@@ -16,7 +16,7 @@ theChords = \chordmode {
 % Note: 'g4' is a quarter note G. 'r4' is a quarter rest.
 melody = \relative c' {
   \clef treble
-  \key c \major
+  \key g \major
   \time 4/4
   \tempo "Playfully" 4 = 150
 
@@ -30,7 +30,17 @@ melody = \relative c' {
   % had het kunnen weten,
   g,4 g4 g4 g'8 e8~ e8 c4. r4
   % maar was het toch vergeten.
-  c4 c4 c4 c4 e8 d8~ d8 d4. r4
+  c4 c4 c4 c4 e8 d8~ d8 d4. r2
+
+  % Guus weet gewoon heel veel. Hij
+  g,4 g4 g4 g'4 e2.. c8
+  % is ontzettend wijs. Maar na
+  c4 c4 c8 c4. d2 r4 d8 d8
+
+  % 70 jaar de slimste zijn, kleuren
+  g,8 g8 g4 g4 g'8 e8~ e8 c4 c4 r8 e8 fis8
+
+  % zijn haren grijs.
 }
 
 % 4. Put it all together
@@ -42,6 +52,10 @@ melody = \relative c' {
       Ork ork ork. Soep eet je met een vork.
       Ik had het kun~ nen we~ ten,
       maar was het toch ver~ ge~ ten.
+
+      Guus weet gewoon heel veel. Hij
+      is ont~ zet~ tend wijs. Maar na
+      ze~ ven~ tig jaar de slim~ ste zijn, kleur~ en
     }
   >>
   \layout { }
