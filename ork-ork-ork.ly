@@ -28,8 +28,9 @@ melody = \relative c' {
   d2_"(Nee, lepel.)" r4 d4
 
   % had het kunnen weten,
-  g,4 g4 g4 g'8 e8~ e8 c4
+  g,4 g4 g4 g'8 e8~ e8 c4. r4
   % maar was het toch vergeten.
+  c4 c4 c4 c4 e8 d8~ d8 d4. r4
 }
 
 % 4. Put it all together
@@ -40,6 +41,7 @@ melody = \relative c' {
     \addlyrics {
       Ork ork ork. Soep eet je met een vork.
       Ik had het kun~ nen we~ ten,
+      maar was het toch ver~ ge~ ten.
     }
   >>
   \layout { }
