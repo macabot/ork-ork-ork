@@ -8,8 +8,9 @@
 theChords = \chordmode {
   \set chordChanges = ##t
   \repeat unfold 3 {
-    g1 | c1 | a1:m | d1
+    g1 c1 a1:m d1
   }
+  g1 c1 d1 d1
 }
 
 % 2. Define the Melody
@@ -33,15 +34,18 @@ melody = \relative c' {
   c4 c4 c4 c4 e8 d8~ d8 d4. r2
 
   % Guus weet gewoon heel veel. Hij
-  g,4 g4 g4 g'4 e2.. c8
+  g,4 g4 g4 g'4 e2 r4. c8
   % is ontzettend wijs. Maar na
   c4 c4 c8 c4. d2 r4 d8 d8
 
   % 70 jaar de slimste zijn, kleuren
-  g,8 g8 g4 g4 g'8 e8~ e8 c4 c4 r8 e8 fis8
+  g,8 g8 g4 g4 g'8 e8~ e8 c4 c4 r8 e8 fis8~
 
   % zijn haren grijs.
+  fis8 fis4 g4 a4 a8~ a2 r2
 }
+
+% showLastLength = R1*3
 
 % 4. Put it all together
 \score {
@@ -55,7 +59,8 @@ melody = \relative c' {
 
       Guus weet gewoon heel veel. Hij
       is ont~ zet~ tend wijs. Maar na
-      ze~ ven~ tig jaar de slim~ ste zijn, kleur~ en
+      ze~ ven~ tig jaar de slim~ ste zijn, kleu~ ren
+      zijn ha~ ren grijs.
     }
   >>
   \layout { }
