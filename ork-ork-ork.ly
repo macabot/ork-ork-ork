@@ -13,14 +13,7 @@ theChords = \chordmode {
   g1 c1 d1 d1
 }
 
-% 2. Define the Melody
-% Note: 'g4' is a quarter note G. 'r4' is a quarter rest.
-melody = \relative c' {
-  \clef treble
-  \key g \major
-  \time 4/4
-  \tempo "Playfully" 4 = 150
-
+chorusMusic = {
   % Ork ork ork,
   g2 g'4. e8~ | e1
   % soep eet je met een
@@ -45,22 +38,41 @@ melody = \relative c' {
   fis8 fis4 g4 a4 a8~ a2 r2
 }
 
+chorusLyrics = \lyricmode {
+  Ork ork ork. Soep eet je met een vork.
+  Ik had het kun~ nen we~ ten,
+  maar was het toch ver~ ge~ ten.
+
+  Guus weet gewoon heel veel. Hij
+  is ont~ zet~ tend wijs. Maar na
+  ze~ ven~ tig jaar de slim~ ste zijn, kleu~ ren
+  zijn ha~ ren grijs.
+}
+
+% 2. Define the Melody
+% Note: 'g4' is a quarter note G. 'r4' is a quarter rest.
+melody = \relative c' {
+  \clef treble
+  \key g \major
+  \time 4/4
+  \tempo "Playfully" 4 = 150
+
+  \chorusMusic
+}
+
 % showLastLength = R1*3
 
 % 4. Put it all together
 \score {
   <<
     \new ChordNames { \theChords }
-    \new Staff { \melody }
-    \addlyrics {
-      Ork ork ork. Soep eet je met een vork.
-      Ik had het kun~ nen we~ ten,
-      maar was het toch ver~ ge~ ten.
-
-      Guus weet gewoon heel veel. Hij
-      is ont~ zet~ tend wijs. Maar na
-      ze~ ven~ tig jaar de slim~ ste zijn, kleu~ ren
-      zijn ha~ ren grijs.
+    \new Staff {
+      \new Voice = "myNotes" {
+        \melody
+      }
+    }
+    \new Lyrics \lyricsto "myNotes" {
+      \chorusLyrics
     }
   >>
   \layout { }
