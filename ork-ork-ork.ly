@@ -12,15 +12,16 @@ verseChords = \chordmode {
 }
 
 verseMelody = \relative c' {
+  \partial 4 g4
   % Voordat Guus een peuter was, kon
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % hij al heel goed tellen.
-  e4 e4 e4 e4 e8 d4. r2
+  e4 e4 e4 e4 e8 d4. r4 d4
 
   % Als je dan wat hulp nodig had,
-  g,4 g4 g4 g'8 e8~ e8 c8 c8 c4 r4.
+  g,4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % kon je hem altijd bellen. Maar
-  e8 e8 e4 e4 e4 e8 d4 r4. g,4
+  e4 e4 e4 e4 e8 d4 r4. g,4
 
   % Guus was erg gewild. Je stond
   g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
@@ -35,15 +36,28 @@ verseMelody = \relative c' {
 }
 
 verseOneLyrics = \lyricmode {
+  _
   Voor~ dat Guus een peu~ ter was, kon
   hij al heel goed tel~ len.
-  Als je dan wat hulp no~ dig had,
-  kon je hem al~ tijd bel~ len. Maar
+  _ Als je dan wat hulp nodig had,
+  _ "kon je" hem al~ tijd bel~ len. Maar
   Guus was erg ge~ wild. Je stond
   erg lang in de wacht.
 
   Welk ge~ tal komt er na "6?"
   Is dat soms "8?"
+}
+
+verseTwoLyrics = \lyricmode {
+  Toen Guus la~ ter naar school ging,
+  _ "hielp hij" elk kind met suc~ ces.
+  _ "Als de" juf een keer~ tje ziek was,
+  gaf hij zelf ge~ woon de les.
+
+  Optellen bij het rekenen,
+  deed Guus met veel plezier.
+  De juf vroeg, wat is "3 + 3?"
+  De klas riep heel hard 4.
 }
 
 chorusChords = \chordmode {
@@ -92,6 +106,7 @@ chorusLyrics = \lyricmode {
 % The Chords
 theChords = \chordmode {
   \set chordChanges = ##t
+  \partial 4 s4
   \verseChords
   \chorusChords
 }
@@ -124,6 +139,9 @@ melody = \relative c' {
     \new Lyrics \lyricsto "myNotes" {
       \verseOneLyrics
       \chorusLyrics
+    }
+    \new Lyrics \lyricsto "myNotes" {
+      \verseTwoLyrics
     }
   >>
   \layout { }
