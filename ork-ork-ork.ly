@@ -5,7 +5,7 @@
   % Hacklily uses LilyPond 2.22.2
 }
 
-verseChords = \chordmode {
+verseOneChords = \chordmode {
   g1 c1 a1:m d1
   g1 c1 a1:m d1
   g1 c1 a1:m d1
@@ -48,12 +48,21 @@ verseOneLyrics = \lyricmode {
   Is dat soms "8?"
 }
 
+verseTwoChords = \chordmode {
+  d1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 d1 r1
+}
+
 verseTwoMelody = \relative c' {
   \mark "Verse 2"
-
-  % Toen Guus later naar school ging,
-  g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
-  % hielp hij elk kind met succes.
+  % Toen
+  r4 r2 g4
+  % Guus later naar school ging, hielp hij
+  g4 g4 g4 g'8 e8~ e8 c4 r4. c8 c8
+  % elk kind met succes.
   e4 e4 e4 e4 e8 d4. r4 d4
 
   % Als de juf een keertje ziek was,
@@ -75,13 +84,13 @@ verseTwoMelody = \relative c' {
 
 verseTwoLyrics = \lyricmode {
   Toen Guus la~ ter naar school ging,
-  _ "hielp hij" elk kind met suc~ ces.
-  _ "Als de" juf een keer~ tje ziek was,
+  hielp hij elk kind met suc~ ces.
+  Als de juf een keer~ tje ziek was,
   gaf hij zelf ge~ woon de les.
 
   Optellen bij het rekenen,
   deed Guus met veel plezier.
-  De juf vroeg, wat is "3 + 3?"
+  De juf vroeg, wat is "3" "+" "3?"
   De klas riep heel hard "4."
 }
 
@@ -133,9 +142,9 @@ chorusLyrics = \lyricmode {
 % The Chords
 theChords = \chordmode {
   \set chordChanges = ##t
-  \verseChords
+  \verseOneChords
   \chorusChords
-  \verseChords
+  \verseTwoChords
 }
 
 % The Melody
