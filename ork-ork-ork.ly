@@ -7,6 +7,8 @@
 verseChords = \chordmode {
   g1 c1 a1:m d1
   g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 d1 r1
 }
 
 verseMelody = \relative c' {
@@ -17,15 +19,31 @@ verseMelody = \relative c' {
 
   % Als je dan wat hulp nodig had,
   g,4 g4 g4 g'8 e8~ e8 c8 c8 c4 r4.
-  % kon je hem altijd bellen.
-  e8 e8 e4 e4 e4 e8 d4. r2
+  % kon je hem altijd bellen. Maar
+  e8 e8 e4 e4 e4 e8 d4 r4. g,4
+
+  % Guus was erg gewild. Je stond
+  g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
+  % erg lang in de wacht.
+  e4 e4 e4 e8 d8~ d8 r8 r4 r2
+
+  % Welk getal komt er na 6?
+  g,4 g4 g4 g'8 e8~ e8 c4 c4 r4.
+
+  % Is dat soms 8?
+  r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
 }
 
 verseOneLyrics = \lyricmode {
   Voor~ dat Guus een peu~ ter was, kon
   hij al heel goed tel~ len.
   Als je dan wat hulp no~ dig had,
-  kon je hem al~ tijd bel~ len.
+  kon je hem al~ tijd bel~ len. Maar
+  Guus was erg ge~ wild. Je stond
+  erg lang in de wacht.
+
+  Welk ge~ tal komt er na "6?"
+  Is dat soms "8?"
 }
 
 chorusChords = \chordmode {
@@ -90,7 +108,7 @@ melody = \relative c' {
 }
 
 % For debugging
-% showLastLength = R1*3
+% showLastLength = R1*5
 
 % Put it all together
 \score {
