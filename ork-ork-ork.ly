@@ -4,20 +4,34 @@
   tagline = ""
 }
 
-% 1. Define the Chords
-theChords = \chordmode {
-  \set chordChanges = ##t
-  \repeat unfold 3 {
-    g1 c1 a1:m d1
-  }
+verseChords = \chordmode {
+  g1 c1 a1:m d1
+}
+
+verseMelody = \relative c' {
+  % Voordat Guus een peuter was, kon
+  g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
+  % hij al heel goed tellen.
+  e4 e4 e4 e4 e8 d4. r2
+}
+
+verseOneLyrics = \lyricmode {
+  Voor~ dat Guus een peu~ ter was, kon
+  hij al heel goed tel~ len.
+}
+
+chorusChords = \chordmode {
+  g1 c1 a1:m r1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
   g1 c1 d1 d1
 }
 
-chorusMusic = {
+chorusMelody = \relative c' {
   % Ork ork ork,
-  g2 g'4. e8~ | e1
+  g2 g'4. e8~ e1
   % soep eet je met een
-  c4 c8 c8 c8 c4. |
+  c4 c8 c8 c8 c4.
   % vork                Ik
   d2_"(Nee, lepel.)" r4 d4
 
@@ -49,29 +63,40 @@ chorusLyrics = \lyricmode {
   zijn ha~ ren grijs.
 }
 
-% 2. Define the Melody
-% Note: 'g4' is a quarter note G. 'r4' is a quarter rest.
+% The Chords
+theChords = \chordmode {
+  \set chordChanges = ##t
+  \verseChords
+  \chorusChords
+}
+
+% The Melody
 melody = \relative c' {
   \clef treble
   \key g \major
   \time 4/4
   \tempo "Playfully" 4 = 150
 
-  \chorusMusic
+  \verseMelody
+  \chorusMelody
 }
 
+% For debugging
 % showLastLength = R1*3
 
-% 4. Put it all together
+% Put it all together
 \score {
   <<
-    \new ChordNames { \theChords }
+    \new ChordNames {
+      \theChords
+    }
     \new Staff {
       \new Voice = "myNotes" {
         \melody
       }
     }
     \new Lyrics \lyricsto "myNotes" {
+      \verseOneLyrics
       \chorusLyrics
     }
   >>
