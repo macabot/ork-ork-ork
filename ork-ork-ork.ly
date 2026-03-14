@@ -62,21 +62,21 @@ verseTwoMelody = \relative c' {
   r4 r2 g4
   % Guus later naar school ging, hielp hij
   g4 g4 g4 g'8 e8~ e8 c4 r4. c8 c8
-  % elk kind met succes.
-  e4 e4 e4 e4 e8 d4. r4 d4
+  % elk kind met succes. Als de
+  e4 e4 e4 e8 d8~ d8 r8 r2 g,8 g8
 
-  % Als de juf een keertje ziek was,
-  g,4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
-  % gaf hij zelf gewoon de les.
-  e4 e4 e4 e4 e8 d4 r4. g,4
-
-  % Optellen bij het rekenen,
-  g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
-  % deed Guus met veel plezier.
+  % juf een keertje ziek was, gaf hij
+  g4 g4 g4 g'8 e8~ e8 c4 r4. c8 c8
+  % zelf gewoon de les.
   e4 e4 e4 e8 d8~ d8 r8 r4 r2
 
-  % De juf vroeg, wat is 3 + 3?
-  g,4 g4 g4 g'8 e8~ e8 c4 c4 r4.
+  % Optellen bij het rekenen, deed
+  g,4 g8 g8  g4  g'8 e8~ e8 c4 c4 r8 c4
+  % Guus met veel plezier. De
+  e4 e4 e4 e8 d8~ d8 r2 g,8
+
+  % juf vroeg, wat is 3 + 3?
+  g4 g4 g4 g'8 e8~ e8 c4 c4 r4.
 
   % De klas riep heel hard 4.
   r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
@@ -88,8 +88,8 @@ verseTwoLyrics = \lyricmode {
   Als de juf een keer~ tje ziek was,
   gaf hij zelf ge~ woon de les.
 
-  Optellen bij het rekenen,
-  deed Guus met veel plezier.
+  Op~ tel~ len bij het re~ ke~ nen,
+  deed Guus met veel ple~ zier.
   De juf vroeg, wat is "3" "+" "3?"
   De klas riep heel hard "4."
 }
