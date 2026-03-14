@@ -2,6 +2,7 @@
   title = "Ork ork ork"
   composer = "Michael Cabot & Anne Kerkhoven"
   tagline = ""
+  % Hacklily uses LilyPond 2.22.2
 }
 
 verseChords = \chordmode {
@@ -11,17 +12,17 @@ verseChords = \chordmode {
   g1 c1 d1 r1
 }
 
-verseMelody = \relative c' {
-  \partial 4 g4
+verseOneMelody = \relative c' {
+  \mark "Verse 1"
   % Voordat Guus een peuter was, kon
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % hij al heel goed tellen.
-  e4 e4 e4 e4 e8 d4. r4 d4
+  e4 e4 e4 e4 e8 d4. r2
 
   % Als je dan wat hulp nodig had,
-  g,4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
+  g,4 g4 g4 g'8 e8~ e8 c8 c8 c4 r4.
   % kon je hem altijd bellen. Maar
-  e4 e4 e4 e4 e8 d4 r4. g,4
+  e8 e8 e4 e4 e4 e8 d4 r4. g,4
 
   % Guus was erg gewild. Je stond
   g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
@@ -36,16 +37,40 @@ verseMelody = \relative c' {
 }
 
 verseOneLyrics = \lyricmode {
-  _
   Voor~ dat Guus een peu~ ter was, kon
   hij al heel goed tel~ len.
-  _ Als je dan wat hulp nodig had,
-  _ "kon je" hem al~ tijd bel~ len. Maar
+  Als je dan wat hulp no~ dig had,
+  kon je hem al~ tijd bel~ len. Maar
   Guus was erg ge~ wild. Je stond
   erg lang in de wacht.
 
   Welk ge~ tal komt er na "6?"
   Is dat soms "8?"
+}
+
+verseTwoMelody = \relative c' {
+  \mark "Verse 2"
+
+  % Toen Guus later naar school ging,
+  g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
+  % hielp hij elk kind met succes.
+  e4 e4 e4 e4 e8 d4. r4 d4
+
+  % Als de juf een keertje ziek was,
+  g,4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
+  % gaf hij zelf gewoon de les.
+  e4 e4 e4 e4 e8 d4 r4. g,4
+
+  % Optellen bij het rekenen,
+  g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
+  % deed Guus met veel plezier.
+  e4 e4 e4 e8 d8~ d8 r8 r4 r2
+
+  % De juf vroeg, wat is 3 + 3?
+  g,4 g4 g4 g'8 e8~ e8 c4 c4 r4.
+
+  % De klas riep heel hard 4.
+  r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
 }
 
 verseTwoLyrics = \lyricmode {
@@ -57,7 +82,7 @@ verseTwoLyrics = \lyricmode {
   Optellen bij het rekenen,
   deed Guus met veel plezier.
   De juf vroeg, wat is "3 + 3?"
-  De klas riep heel hard 4.
+  De klas riep heel hard "4."
 }
 
 chorusChords = \chordmode {
@@ -68,6 +93,8 @@ chorusChords = \chordmode {
 }
 
 chorusMelody = \relative c' {
+  \mark "Chorus"
+
   % Ork ork ork,
   g2 g'4. e8~ e1
   % soep eet je met een
@@ -106,9 +133,9 @@ chorusLyrics = \lyricmode {
 % The Chords
 theChords = \chordmode {
   \set chordChanges = ##t
-  \partial 4 s4
   \verseChords
   \chorusChords
+  \verseChords
 }
 
 % The Melody
@@ -118,8 +145,9 @@ melody = \relative c' {
   \time 4/4
   \tempo "Playfully" 4 = 150
 
-  \verseMelody
+  \verseOneMelody
   \chorusMelody
+  \verseTwoMelody
 }
 
 % For debugging
@@ -139,8 +167,6 @@ melody = \relative c' {
     \new Lyrics \lyricsto "myNotes" {
       \verseOneLyrics
       \chorusLyrics
-    }
-    \new Lyrics \lyricsto "myNotes" {
       \verseTwoLyrics
     }
   >>
