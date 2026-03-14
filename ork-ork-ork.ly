@@ -6,6 +6,7 @@
 
 verseChords = \chordmode {
   g1 c1 a1:m d1
+  g1 c1 a1:m d1
 }
 
 verseMelody = \relative c' {
@@ -13,11 +14,18 @@ verseMelody = \relative c' {
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % hij al heel goed tellen.
   e4 e4 e4 e4 e8 d4. r2
+
+  % Als je dan wat hulp nodig had,
+  g,4 g4 g4 g'8 e8~ e8 c8 c8 c4 r4.
+  % kon je hem altijd bellen.
+  e8 e8 e4 e4 e4 e8 d4. r2
 }
 
 verseOneLyrics = \lyricmode {
   Voor~ dat Guus een peu~ ter was, kon
   hij al heel goed tel~ len.
+  Als je dan wat hulp no~ dig had,
+  kon je hem al~ tijd bel~ len.
 }
 
 chorusChords = \chordmode {
