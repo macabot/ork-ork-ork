@@ -73,13 +73,13 @@ verseTwoMelody = \relative c' {
   % Optellen bij het rekenen, deed
   g,4 g8 g8  g4  g'8 e8~ e8 c4 c4 r8 c4
   % Guus met veel plezier. De
-  e4 e4 e4 e8 d8~ d8 r2 g,8
+  e4 e4 e4 e8 d8~ d8 r2. g,8
 
   % juf vroeg, wat is 3 + 3?
-  g4 g4 g4 g'8 e8~ e8 c4 c4 r4.
+  g4 g4 g4 g'8 e8~ e8 c4 c4 r4 e8
 
   % De klas riep heel hard 4.
-  r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
 }
 
 verseTwoLyrics = \lyricmode {
@@ -160,7 +160,7 @@ melody = \relative c' {
 }
 
 % For debugging
-% showLastLength = R1*5
+% showLastLength = R1*3
 
 % Put it all together
 \score {
