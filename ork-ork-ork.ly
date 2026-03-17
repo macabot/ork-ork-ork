@@ -81,7 +81,7 @@ verseTwoMelody = \relative c' {
   g4 g4 g4 g'8 e8~ e8 c4 c4 r4 e8
 
   % De klas riep heel hard 4.
-  fis4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 6.)" r2.
 }
 
 verseTwoLyrics = \lyricmode {
