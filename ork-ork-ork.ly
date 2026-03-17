@@ -147,6 +147,7 @@ theChords = \chordmode {
   \verseOneChords
   \chorusChords
   \verseTwoChords
+  \chorusChords
 }
 
 % The Melody
@@ -159,6 +160,7 @@ melody = \relative c' {
   \verseOneMelody
   \chorusMelody
   \verseTwoMelody
+  \chorusMelody
 }
 
 % For debugging
@@ -179,6 +181,7 @@ melody = \relative c' {
       \verseOneLyrics
       \chorusLyrics
       \verseTwoLyrics
+      \chorusLyrics
     }
   >>
   \layout { }
