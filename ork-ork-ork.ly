@@ -14,7 +14,7 @@ verseOneChords = \chordmode {
 }
 
 verseOneMelody = \relative c' {
-  \mark "Verse 1"
+  \sectionLabel "Verse 1"
   % Voordat Guus een peuter was, kon
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % hij al heel goed tellen.
@@ -58,7 +58,7 @@ verseTwoChords = \chordmode {
 }
 
 verseTwoMelody = \relative c' {
-  \mark "Verse 2"
+  \sectionLabel "Verse 2"
   % Toen
   r4 r2 g4
   % Guus later naar school ging, hielp hij
@@ -104,7 +104,7 @@ verseThreeChords = \chordmode {
 }
 
 verseThreeMelody = \relative c' {
-  \mark "Verse 3"
+  \sectionLabel "Verse 3"
   % Toen
   r2 r4 g4
   % Guus alweer wat ouder was, deed
@@ -159,7 +159,7 @@ chorusChords = \chordmode {
 }
 
 chorusMelody = \relative c' {
-  \mark "Chorus"
+  \sectionLabel "Chorus"
 
   % Ork ork ork,
   g2 g'4. e8~ e1
@@ -204,7 +204,7 @@ chorusEndChords = \chordmode {
 }
 
 chorusEndMelody = \relative c' {
-  \mark "Chorus"
+  \sectionLabel "Final Chorus"
 
   % Ork ork ork,
   g2 g'4. e8~ e1
