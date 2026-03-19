@@ -1,10 +1,9 @@
-\version "2.24.4"
+\version "2.24.3"
 
 \header {
   title = "Ork ork ork"
   composer = "Michael Cabot & Anne Kerkhoven"
   tagline = ""
-  % Hacklily uses LilyPond 2.22.2
 }
 
 verseOneChords = \chordmode {
@@ -96,6 +95,62 @@ verseTwoLyrics = \lyricmode {
   De klas riep heel hard "4."
 }
 
+verseThreeChords = \chordmode {
+  d1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 d1 r1
+}
+
+verseThreeMelody = \relative c' {
+  \mark "Verse 3"
+  % Toen
+  r2 r4 g4
+  % Guus alweer wat ouder was, deed
+  g4 g4 g4 g'8 e8~
+  e8 c4 c4 r8 c4
+  % hij wiskunde examen. Hij
+  e4 e4 e8 e8 e8 e8~
+  e8 d4 r8 r4 g,4
+
+  % was de beste van het land. Dat
+  g4 g4 g4 g'8 e8~
+  e8 c4 c4 r4 c8
+  % kan ik wel beamen. De
+  e4 e4 e4 e8 e8~
+  e8 d4 r2 g,8
+
+  % vragen waren te makkelijk. Je
+  g4 g4 g8 g8 g'8 e8~
+  e8 c4 c4 r8 c4
+  % zag het aan zijn gelaat. De
+  e8 e8 e4 e4 e8 d8~
+  d8 r2. g,8
+
+  % omtrek van een cirkel, dat
+  g4 g4 g4 g'8 e8~
+  e8 c4 r2 e8
+
+  % is Pi r-kwadraat.
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 2×Pi×r.)" r2.
+}
+
+% For debugging
+% showLastLength = R1*5
+
+verseThreeLyrics = \lyricmode {
+  Toen Guus al~ weer wat ou~ der was,
+  deed hij wis~ kun~ de ex~ a~ men.
+  Hij was de bes~ te van het land.
+  Dat kan ik wel be~ a~ men.
+
+  De vra~ gen wa~ ren te mak~ ke~ lijk.
+  Je zag het aan zijn ge~ laat.
+  De om~ trek van een cir~ kel,
+  dat is Pi r kwa~ draat.
+}
+
 chorusChords = \chordmode {
   g1 c1 a1:m r1
   g1 c1 a1:m d1
@@ -148,6 +203,7 @@ theChords = \chordmode {
   \chorusChords
   \verseTwoChords
   \chorusChords
+  \verseThreeChords
 }
 
 % The Melody
@@ -161,10 +217,8 @@ melody = \relative c' {
   \chorusMelody
   \verseTwoMelody
   \chorusMelody
+  \verseThreeMelody
 }
-
-% For debugging
-% showLastLength = R1*3
 
 % Put it all together
 \score {
@@ -182,6 +236,7 @@ melody = \relative c' {
       \chorusLyrics
       \verseTwoLyrics
       \chorusLyrics
+      \verseThreeLyrics
     }
   >>
   \layout { }
