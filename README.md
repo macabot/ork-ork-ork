@@ -4,6 +4,10 @@
 
 - [LilyPond](https://lilypond.org/)
 
+### Optional
+
+- [Frescobaldi](https://www.frescobaldi.org/)
+
 ## Build
 
 Run
