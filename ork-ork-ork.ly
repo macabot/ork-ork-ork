@@ -133,7 +133,7 @@ verseThreeMelody = \relative c' {
   e8 c4 r2 e8
 
   % is Pi r-kwadraat.
-  fis4 fis8 g4 a4 a8~ a4_"(Nee, 2×Pi×r.)" r2.
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 2 Pi r.)" r2 r4
 }
 
 % For debugging
@@ -196,6 +196,57 @@ chorusLyrics = \lyricmode {
   zijn ha~ ren grijs.
 }
 
+chorusEndChords = \chordmode {
+  g1 c1 a1:m r1
+  g1 c1 a1:m d1
+  g1 c1 a1:m d1
+  g1 c1 d1 r2 g2
+}
+
+chorusEndMelody = \relative c' {
+  \mark "Chorus"
+
+  % Ork ork ork,
+  g2 g'4. e8~ e1
+  % soep eet je met een
+  c4 c8 c8 c8 c4.
+  % vork                Ik
+  d2_"(Nee, lepel.)" r4 d4
+
+  % had het kunnen weten,
+  g,4 g4 g4 g'8 e8~ e8 c4. r4
+  % maar was het toch vergeten. De
+  c4 c4 c4 c4 e8 d8~ d8 d4. r4 g,4
+
+  % klok horen we wel luiden, maar
+  g4 g8 g8 g8 g'4 e8~
+  e8 c4 r2 c8
+  % waar hangt toch die klepel? En
+  e4 e4 e4 e8 e8~
+  e8 d4 r2 g,8
+
+  % Guus die weet, zoals wij nu ook, soep
+  g4 g4 g8 g8 g'8 e8~
+  e8 c4 c4 r8 e8 fis8~
+
+  % eet je met een
+  fis8 fis4 g4 a4 r8\fermata
+
+  % (lepel)
+  g2_"(Lepel!)" r2
+}
+
+chorusEndLyrics = \lyricmode {
+  Ork ork ork. Soep eet je met een vork.
+  Ik had het kun~ nen we~ ten,
+  maar was het toch ver~ ge~ ten. De
+
+  klok ho~ ren we wel lui~ den,
+  maar waar hangt toch die kle~ pel?
+  En Guus die weet, zo~ als wij nu ook,
+  soep eet je met een
+}
+
 % The Chords
 theChords = \chordmode {
   \set chordChanges = ##t
@@ -204,6 +255,7 @@ theChords = \chordmode {
   \verseTwoChords
   \chorusChords
   \verseThreeChords
+  \chorusEndChords
 }
 
 % The Melody
@@ -218,6 +270,7 @@ melody = \relative c' {
   \verseTwoMelody
   \chorusMelody
   \verseThreeMelody
+  \chorusEndMelody
 }
 
 % Put it all together
@@ -237,6 +290,7 @@ melody = \relative c' {
       \verseTwoLyrics
       \chorusLyrics
       \verseThreeLyrics
+      \chorusEndLyrics
     }
   >>
   \layout { }
