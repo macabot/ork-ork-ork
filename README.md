@@ -7,6 +7,7 @@
 ### Optional
 
 - [Frescobaldi](https://www.frescobaldi.org/)
+  - Requires: `qsynth -n`
 
 ## Build
 
