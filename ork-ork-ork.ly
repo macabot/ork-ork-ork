@@ -14,8 +14,12 @@ verseOneChords = \chordmode {
 }
 
 verseOneMelody = \relative c' {
+  % Ensure the \tempo is written above the \sectionLabel
+  \override Score.MetronomeMark.outside-staff-priority = #3000
+  \override Score.SectionLabel.outside-staff-priority = #1000
+
   \section
-  \sectionLabel "Verse 1"
+  \sectionLabel "Couplet 1"
   % Voordat Guus een peuter was, kon
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
   % hij al heel goed tellen.
@@ -63,7 +67,7 @@ verseTwoChords = \chordmode {
 
 verseTwoMelody = \relative c' {
   \section
-  \sectionLabel "Verse 2"
+  \sectionLabel "Couplet 2"
   % Toen
   r2 r4 g4
   % Guus later naar school ging, hielp hij
@@ -115,7 +119,7 @@ verseThreeChords = \chordmode {
 
 verseThreeMelody = \relative c' {
   \section
-  \sectionLabel "Verse 3"
+  \sectionLabel "Couplet 3"
   % Toen
   r2 r4 g4
   % Guus alweer wat ouder was, deed
@@ -171,7 +175,7 @@ chorusChords = \chordmode {
 
 chorusMelody = \relative c' {
   \section
-  \sectionLabel "Chorus"
+  \sectionLabel "Refrein"
 
   % Ork ork ork,
   g2 g'4. e8~ e1
@@ -218,7 +222,7 @@ chorusEndChords = \chordmode {
 
 chorusEndMelody = \relative c' {
   \section
-  \sectionLabel "Final Chorus"
+  \sectionLabel "Slotrefrein"
   
   \override TextSpanner.bound-details.left.text = \markup { \italic "rall." }
 
@@ -280,7 +284,7 @@ melody = \relative c' {
   \clef treble
   \key g \major
   \time 4/4
-  \tempo "Playfully" 4 = 150
+  \tempo "Speels" 4 = 150
 
   \verseOneMelody
   \chorusMelody
