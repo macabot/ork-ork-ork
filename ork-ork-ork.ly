@@ -249,7 +249,7 @@ chorusEndMelody = \relative c' {
   fis8 fis4 g4 a8 r4\stopTextSpan\fermata
 
   % (lepel)
-  r2 g2_\markup { \bold \large "(Lepel!)" }
+  r2 \parenthesize g2_\markup { \bold \large "(Lepel!)" }
   \bar "|."
 }
 
