@@ -205,6 +205,8 @@ chorusEndChords = \chordmode {
 
 chorusEndMelody = \relative c' {
   \sectionLabel "Final Chorus"
+  
+  \override TextSpanner.bound-details.left.text = \markup { \italic "rall." }
 
   % Ork ork ork,
   g2 g'4. e8~ e1
@@ -223,17 +225,18 @@ chorusEndMelody = \relative c' {
   e8 c4 r2 c8
   % waar hangt toch die klepel? En
   e4 e4 e4 e8 e8~
-  e8 d4 r2 g,8
+  e8 d4 r2 g,8\startTextSpan
 
   % Guus die weet, zoals wij nu ook, soep
   g4 g4 g8 g8 g'8 e8~
   e8 c4 c4 r8 e8 fis8~
 
   % eet je met een
-  fis8 fis4 g4 a4 r8\fermata
+  fis8 fis4 g4 a8 r4\stopTextSpan\fermata
 
   % (lepel)
-  g2_"(Lepel!)" r2
+  r2 g2_\markup { \bold \large "(Lepel!)" }
+  \bar "|."
 }
 
 chorusEndLyrics = \lyricmode {
