@@ -3,7 +3,7 @@
 \header {
   title = "Ork ork ork"
   composer = "Michael Cabot & Anne Kerkhoven"
-  tagline = ""
+  tagline = "Ter gelegenheid van de 70e verjaardag van Guus."
 }
 
 verseOneChords = \chordmode {
