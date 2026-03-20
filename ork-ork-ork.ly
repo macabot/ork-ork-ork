@@ -21,20 +21,23 @@ verseOneMelody = \relative c' {
   e4 e4 e4 e4 e8 d4. r2
 
   % Als je dan wat hulp nodig had,
-  g,4 g4 g4 g'8 e8~ e8 c8 c8 c4 r4.
+  g,4 g4 g4 g'8 e8~
+  e8 c8 c8 c4 r8 r4
   % kon je hem altijd bellen. Maar
-  e8 e8 e4 e4 e4 e8 d4 r4. g,4
+  e8 e8 e4 e4 e4
+  e8 d4 r8 r4 g,4
 
   % Guus was erg gewild. Je stond
-  g4 g4 g4 g'8 e8~ e8 r8 r2 c8 c8
+  g4 g4 g4 g'8 e8~ e8 r8 r4 r4 c8 c8
   % erg lang in de wacht.
   e4 e4 e4 e8 d8~ d8 r8 r4 r2
 
   % Welk getal komt er na 6?
-  g,4 g4 g4 g'8 e8~ e8 c4 c4 r4.
+  g,4 g4 g4 g'8 e8~
+  e8 c4 c4 r8 r4
 
   % Is dat soms 8?
-  r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r2.
+  r4 fis8 g4 a4 a8~ a4_"(Nee, 7.)" r4 r2
 }
 
 verseOneLyrics = \lyricmode {
@@ -60,27 +63,32 @@ verseTwoChords = \chordmode {
 verseTwoMelody = \relative c' {
   \sectionLabel "Verse 2"
   % Toen
-  r4 r2 g4
+  r2 r4 g4
   % Guus later naar school ging, hielp hij
-  g4 g4 g4 g'8 e8~ e8 c4 r4. c8 c8
+  g4 g4 g4 g'8 e8~
+  e8 c4 r8 r4 c8 c8
   % elk kind met succes. Als de
-  e4 e4 e4 e8 d8~ d8 r8 r2 g,8 g8
+  e4 e4 e4 e8 d8~
+  d8 r8 r4 r4 g,8 g8
 
   % juf een keertje ziek was, gaf hij
-  g4 g4 g4 g'8 e8~ e8 c4 r4. c8 c8
+  g4 g4 g4 g'8 e8~
+  e8 c4 r8 r4 c8 c8
   % zelf gewoon de les.
-  e4 e4 e4 e8 d8~ d8 r8 r4 r2
+  e4 e4 e4 e8 d8~
+  d8 r8 r4 r2
 
   % Optellen bij het rekenen, deed
   g,4 g8 g8  g4  g'8 e8~ e8 c4 c4 r8 c4
   % Guus met veel plezier. De
-  e4 e4 e4 e8 d8~ d8 r2. g,8
+  e4 e4 e4 e8 d8~
+  d8 r8 r4 r4 r8 g,8
 
   % juf vroeg, wat is 3 + 3?
   g4 g4 g4 g'8 e8~ e8 c4 c4 r4 e8
 
   % De klas riep heel hard 4.
-  fis4 fis8 g4 a4 a8~ a4_"(Nee, 6.)" r2.
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 6.)" r4 r2
 }
 
 verseTwoLyrics = \lyricmode {
@@ -119,21 +127,21 @@ verseThreeMelody = \relative c' {
   e8 c4 c4 r4 c8
   % kan ik wel beamen. De
   e4 e4 e4 e8 e8~
-  e8 d4 r2 g,8
+  e8 d4 r8 r4 r8 g,8
 
   % vragen waren te makkelijk. Je
   g4 g4 g8 g8 g'8 e8~
   e8 c4 c4 r8 c4
   % zag het aan zijn gelaat. De
   e8 e8 e4 e4 e8 d8~
-  d8 r2. g,8
+  d8 r8 r4 r4 r8 g,8
 
   % omtrek van een cirkel, dat
   g4 g4 g4 g'8 e8~
-  e8 c4 r2 e8
+  e8 c4 r8 r4 r8 e8
 
   % is Pi r-kwadraat.
-  fis4 fis8 g4 a4 a8~ a4_"(Nee, 2 Pi r.)" r2 r4
+  fis4 fis8 g4 a4 a8~ a4_"(Nee, 2 Pi r.)" r4 r2
 }
 
 % For debugging
@@ -174,7 +182,8 @@ chorusMelody = \relative c' {
   c4 c4 c4 c4 e8 d8~ d8 d4. r2
 
   % Guus weet gewoon heel veel. Hij
-  g,4 g4 g4 g'4 e2 r4. c8
+  g,4 g4 g4 g'4
+  e2 r4 r8 c8
   % is ontzettend wijs. Maar na
   c4 c4 c8 c4. d2 r4 d8 d8
 
