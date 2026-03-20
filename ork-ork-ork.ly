@@ -14,6 +14,7 @@ verseOneChords = \chordmode {
 }
 
 verseOneMelody = \relative c' {
+  \section
   \sectionLabel "Verse 1"
   % Voordat Guus een peuter was, kon
   g4 g4 g4 g'8 e8~ e8 c4 c4 r8 c4
@@ -61,6 +62,7 @@ verseTwoChords = \chordmode {
 }
 
 verseTwoMelody = \relative c' {
+  \section
   \sectionLabel "Verse 2"
   % Toen
   r2 r4 g4
@@ -112,6 +114,7 @@ verseThreeChords = \chordmode {
 }
 
 verseThreeMelody = \relative c' {
+  \section
   \sectionLabel "Verse 3"
   % Toen
   r2 r4 g4
@@ -167,6 +170,7 @@ chorusChords = \chordmode {
 }
 
 chorusMelody = \relative c' {
+  \section
   \sectionLabel "Chorus"
 
   % Ork ork ork,
@@ -213,6 +217,7 @@ chorusEndChords = \chordmode {
 }
 
 chorusEndMelody = \relative c' {
+  \section
   \sectionLabel "Final Chorus"
   
   \override TextSpanner.bound-details.left.text = \markup { \italic "rall." }
