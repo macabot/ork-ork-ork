@@ -46,14 +46,14 @@ verseOneMelody = \relative c' {
 }
 
 verseOneLyrics = \lyricmode {
-  Voor~ dat Guus een peu~ ter was, kon
-  hij al heel goed tel~ len.
-  Als je dan wat hulp no~ dig had,
-  kon je hem al~ tijd bel~ len. Maar
-  Guus was erg ge~ wild. Je stond
+  Voor -- dat Guus een peu -- ter was, kon
+  hij al heel goed tel -- len.
+  Als je dan wat hulp no -- dig had,
+  kon je hem al -- tijd bel -- len. Maar
+  Guus was erg ge -- wild. Je stond
   erg lang in de wacht.
 
-  Welk ge~ tal komt er na "6?"
+  Welk ge -- tal komt er na "6?"
   Is dat soms \markup \bold "8?"
 }
 
@@ -98,13 +98,13 @@ verseTwoMelody = \relative c' {
 }
 
 verseTwoLyrics = \lyricmode {
-  Toen Guus la~ ter naar school ging,
-  hielp hij elk kind met suc~ ces.
-  Als de juf een keer~ tje ziek was,
-  gaf hij zelf ge~ woon de les.
+  Toen Guus la -- ter naar school ging,
+  hielp hij elk kind met suc -- ces.
+  Als de juf een keer -- tje ziek was,
+  gaf hij zelf ge -- woon de les.
 
-  Op~ tel~ len bij het re~ ke~ nen,
-  deed Guus met veel ple~ zier.
+  Op -- tel -- len bij het re -- ke -- nen,
+  deed Guus met veel ple -- zier.
   De juf vroeg, wat is "3" "+" "3?"
   De klas riep heel hard \markup \bold "4."
 }
@@ -155,15 +155,15 @@ verseThreeMelody = \relative c' {
 % showLastLength = R1*5
 
 verseThreeLyrics = \lyricmode {
-  Toen Guus al~ weer wat ou~ der was,
-  deed hij wis~ kun~ de ex~ a~ men.
-  Hij was de bes~ te van het land.
-  Dat kan ik wel be~ a~ men.
+  Toen Guus al -- weer wat ou -- der was,
+  deed hij wis -- kun -- de ex -- a -- men.
+  Hij was de bes -- te van het land.
+  Dat kan ik wel be -- a -- men.
 
-  De vra~ gen wa~ ren te mak~ ke~ lijk.
-  Je zag het aan zijn ge~ laat.
-  De om~ trek van een cir~ kel,
-  dat is \markup \bold Pi \markup \bold r \markup \bold kwa~ \markup \bold draat.
+  De vra -- gen wa -- ren te mak -- ke -- lijk.
+  Je zag het aan zijn ge -- laat.
+  De om -- trek van een cir -- kel,
+  dat is \markup \bold Pi \markup \bold r \markup \bold kwa -- \markup \bold draat.
 }
 
 chorusChords = \chordmode {
@@ -204,13 +204,13 @@ chorusMelody = \relative c' {
 
 chorusLyrics = \lyricmode {
   Ork ork ork. Soep eet je met een \markup \bold vork.
-  Ik had het kun~ nen we~ ten,
-  maar was het toch ver~ ge~ ten.
+  Ik had het kun -- nen we -- ten,
+  maar was het toch ver -- ge -- ten.
 
   Guus weet gewoon heel veel. Hij
-  is ont~ zet~ tend wijs. Maar na
-  ze~ ven~ tig jaar de slim~ ste zijn, kleu~ ren
-  zijn ha~ ren grijs.
+  is ont -- zet -- tend wijs. Maar na
+  ze -- ven -- tig jaar de slim -- ste zijn, kleu -- ren
+  zijn ha -- ren grijs.
 }
 
 chorusEndChords = \chordmode {
@@ -259,12 +259,12 @@ chorusEndMelody = \relative c' {
 
 chorusEndLyrics = \lyricmode {
   Ork ork ork. Soep eet je met een \markup \bold vork.
-  Ik had het kun~ nen we~ ten,
-  maar was het toch ver~ ge~ ten. De
+  Ik had het kun -- nen we -- ten,
+  maar was het toch ver -- ge -- ten. De
 
-  klok ho~ ren we wel lui~ den,
-  maar waar hangt toch die kle~ pel?
-  En Guus die weet, zo~ als wij nu ook,
+  klok ho -- ren we wel lui -- den,
+  maar waar hangt toch die kle -- pel?
+  En Guus die weet, zo -- als wij nu ook,
   soep eet je met een
 }
 
