@@ -105,7 +105,7 @@ verseTwoLyrics = \lyricmode {
 
   Op -- tel -- len bij het re -- ke -- nen,
   deed Guus met veel ple -- zier.
-  De juf vroeg, wat is "3" "+" "3?"
+  De juf vroeg, wat is "3" plus "3?"
   De klas riep heel hard \markup \bold "4."
 }
 
