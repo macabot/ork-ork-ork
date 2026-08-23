@@ -227,7 +227,7 @@ chorusEndChords = \chordmode {
 chorusEndMelody = \relative c' {
   \section
   \sectionLabel "Slotrefrein"
-  
+
   \override TextSpanner.bound-details.left.text = \markup { \italic "rall." }
 
   % Ork ork ork,

@@ -3,6 +3,9 @@
 ## Requirements
 
 - [LilyPond](https://lilypond.org/)
+- `fluidsynth`
+- `fluid-soundfont-gm`
+- `ffmpeg`
 
 ### Optional
 
