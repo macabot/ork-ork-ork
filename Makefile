@@ -20,17 +20,17 @@ $(BUILD_DIR)/$(TARGET_NAME).pdf: $(SRC_LY) | $(BUILD_DIR)
 
 # Compile SVG
 # It wraps the lilypond file with one that sets one-page-breaking.
-# This ensures proper spacing between would-be pages.
-$(BUILD_DIR)/$(TARGET_NAME).cropped.svg: $(SRC_LY) | $(BUILD_DIR)
+# This ensures we create a single SVG.
+$(BUILD_DIR)/$(TARGET_NAME).svg: $(SRC_LY) | $(BUILD_DIR)
 	printf '\\version "2.24.3"\n\\include "%s"\n\\paper { page-breaking = #ly:one-page-breaking }\n' "$(SRC_LY)" | \
-	lilypond -dbackend=svg -dcrop -dno-point-and-click -o $(BUILD_DIR)/$(TARGET_NAME) -
+	lilypond -dbackend=svg -dno-point-and-click -o $(BUILD_DIR)/$(TARGET_NAME) -
 
 # Copy PDF to dist
 $(DIST_DIR)/$(TARGET_NAME).pdf: $(BUILD_DIR)/$(TARGET_NAME).pdf | $(DIST_DIR)
 	cp $< $@
 
-# Copy Cropped SVG to dist
-$(DIST_DIR)/$(TARGET_NAME).svg: $(BUILD_DIR)/$(TARGET_NAME).cropped.svg | $(DIST_DIR)
+# Copy SVG to dist
+$(DIST_DIR)/$(TARGET_NAME).svg: $(BUILD_DIR)/$(TARGET_NAME).svg | $(DIST_DIR)
 	cp $< $@
 
 # Copy Static Performance Audio to dist
