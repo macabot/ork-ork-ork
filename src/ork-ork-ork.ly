@@ -6,7 +6,7 @@
 
 \header {
   title = "Ork ork ork"
-  composer = "Michael Cabot & Anne Kerkhoven"
+  composer = "Michael Cabot"
   tagline = "Ter gelegenheid van de 70e verjaardag van Guus."
 }
 
@@ -227,7 +227,7 @@ chorusEndChords = \chordmode {
 chorusEndMelody = \relative c' {
   \section
   \sectionLabel "Slotrefrein"
-  
+
   \override TextSpanner.bound-details.left.text = \markup { \italic "rall." }
 
   % Ork ork ork,
