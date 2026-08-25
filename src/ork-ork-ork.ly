@@ -6,7 +6,7 @@
 
 \header {
   title = "Ork ork ork"
-  composer = "Michael Cabot & Anne Kerkhoven"
+  composer = "Michael Cabot"
   tagline = "Ter gelegenheid van de 70e verjaardag van Guus."
 }
 
