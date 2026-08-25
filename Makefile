@@ -19,9 +19,10 @@ $(BUILD_DIR)/$(TARGET_NAME).pdf: $(SRC_LY) | $(BUILD_DIR)
 	lilypond -dno-point-and-click -o $(BUILD_DIR)/$(TARGET_NAME) $(SRC_LY)
 
 # Compile SVG
-# Inject one-page-breaking for proper spacing between pages.
+# It wraps the lilypond file with one that sets one-page-breaking.
+# This ensures proper spacing between would-be pages.
 $(BUILD_DIR)/$(TARGET_NAME).cropped.svg: $(SRC_LY) | $(BUILD_DIR)
-	printf '\\include "%s"\n\\paper { page-breaking = #ly:one-page-breaking }\n' "$(SRC_LY)" | \
+	printf '\\version "2.24.3"\n\\include "%s"\n\\paper { page-breaking = #ly:one-page-breaking }\n' "$(SRC_LY)" | \
 	lilypond -dbackend=svg -dcrop -dno-point-and-click -o $(BUILD_DIR)/$(TARGET_NAME) -
 
 # Copy PDF to dist
