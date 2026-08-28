@@ -17,10 +17,10 @@ Hieronder vind je de bladmuziek met de tekst. Ook is er een geluidsopname van he
 > Guus was erg gewild...
 
 <audio controls>
-  <source src="dist/macabot-ork-ork-ork.mp3" type="audio/mpeg">
+  <source src="macabot-ork-ork-ork.mp3" type="audio/mpeg">
 Je browser kan het audiobestand niet afspelen.
 </audio>
 
-[Download als PDF](dist/macabot-ork-ork-ork.pdf)
+[Download als PDF](macabot-ork-ork-ork.pdf)
 
-![Michael Cabot - Ork ork ork](dist/macabot-ork-ork-ork.svg)
+![Michael Cabot - Ork ork ork](macabot-ork-ork-ork.svg)
