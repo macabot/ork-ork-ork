@@ -1,0 +1,67 @@
+name: Build and Release Music Assets
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Restore commit timestamps so `make` only rebuilds changed source files
+      - name: Restore Git file timestamps
+        uses: chetan/git-restore-mtime-action@v2
+
+      - name: Cache build and dist directories
+        uses: actions/cache@v4
+        with:
+          path: |
+            build
+            dist
+          key: build-dist-cache-${{ github.sha }}
+          restore-keys: |
+            build-dist-cache-
+
+      - name: Cache SoundFont
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/soundfonts
+          key: soundfont-timbres-of-heaven-v4.00
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lilypond
+
+      - name: Build Assets
+        run: make all
+
+      - name: Zip dist directory
+        run: |
+          cd dist
+          zip -r ../dist.zip .
+
+      # Release the asset on GitHub
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist.zip
+          tag_name: latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Notify the blog repository to rebuild
+      - name: Trigger Blog Deploy Workflow
+        if: vars.DISABLE_BLOG_DISPATCH != 'true'
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.BLOG_DISPATCH_TOKEN }}
+          repository: macabot/macabot-nl-blog
+          event-type: submodule-updated
