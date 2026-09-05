@@ -30,12 +30,6 @@ jobs:
           restore-keys: |
             build-dist-cache-
 
-      - name: Cache SoundFont
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/soundfonts
-          key: soundfont-timbres-of-heaven-v4.00
-
       - name: Install System Dependencies
         run: |
           sudo apt-get update
