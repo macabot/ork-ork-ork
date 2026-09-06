@@ -4,7 +4,7 @@ date = 2026-03-21
 draft = true
 +++
 
-Guus had voor zijn 70e verjaardag een kroeg afgehuurd en vele vrienden en familie uitgenodigd. Voor die gelegenheid had ik een origineel muziekstuk geschreven en voorgedragen met zang en de gitaar. In het stuk was een rol weggelegd voor zowel de gasten als voor Guus. Als ik in het stuk een vraag stelde, dan was het de bedoeling dat de gasten het antwoord gaven dat rijmde, maar fout was, waarna Guus hen verbeterde. Velletjes A4 werden omhoog gehouden zodat men in groot lettertype kon zien wat ze mochten roepen. Neem als voorbeeld het welbekende "ork ork ork" kinderrijmpje aan het begin van het refrein:
+Guus had voor zijn 70e verjaardag een kroeg afgehuurd en vele vrienden en familie uitgenodigd. Voor die gelegenheid had ik een muziekstuk geschreven en voorgedragen met zang en gitaar. In het stuk was een rol weggelegd voor zowel de gasten als voor Guus. Als ik in het stuk een vraag stelde, dan was het de bedoeling dat de gasten het antwoord gaven dat rijmde, maar fout was, waarna Guus hen verbeterde. Velletjes A4 werden omhoog gehouden zodat men in groot lettertype kon zien wat ze mochten roepen. Neem als voorbeeld het welbekende "ork ork ork" kinderrijmpje aan het begin van het refrein:
 
 > \[Ik\] Ork ork ork. Soep eet je met een<br/>\[Gasten\] VORK!<br/>\[Guus\] Nee, lepel!
 
