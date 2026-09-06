@@ -185,7 +185,7 @@ chorusMelody = \relative c' {
   g2 g'4. e8~ e1
   % soep eet je met een
   c4 c8 c8 c8 c4.
-  % vork                Ik
+  % VORK                Ik
   d2_\markup { \bold \large "(Nee, lepel!)" } r4 d4
 
   % had het kunnen weten,
@@ -234,7 +234,7 @@ chorusEndMelody = \relative c' {
   g2 g'4. e8~ e1
   % soep eet je met een
   c4 c8 c8 c8 c4.
-  % vork                Ik
+  % VORK                Ik
   d2_\markup { \bold \large "(Nee, lepel!)" } r4 d4
 
   % had het kunnen weten,
