@@ -41,12 +41,12 @@ verseOneMelody = \relative c' {
   % erg lang in de wacht.
   e4 e4 e4 e8 d8~ d8 r8 r4 r2
 
-  % Welk getal komt er na 6?
+  % Welk getal komt er na zes?
   g,4 g4 g4 g'8 e8~
   e8 c4 c4 r8 r4
 
-  % Is dat soms 8?
-  r4 fis8 g4 a4 a8~ a4_\markup { \bold \large "(Nee, 7!)" } r4 r2
+  % Is dat soms ACHT?
+  r4 fis8 g4 a4 a8~ a4_\markup { \bold \large "(Nee, zeven!)" } r4 r2
 }
 
 verseOneLyrics = \lyricmode {
@@ -57,8 +57,8 @@ verseOneLyrics = \lyricmode {
   Guus was erg ge -- wild. Je stond
   erg lang in de wacht.
 
-  Welk ge -- tal komt er na "6?"
-  Is dat soms \markup { \bold \large "8?" }
+  Welk ge -- tal komt er na zes?
+  Is dat soms \markup \bold ACHT?
 }
 
 verseTwoChords = \chordmode {
@@ -94,11 +94,11 @@ verseTwoMelody = \relative c' {
   e4 e4 e4 e8 d8~
   d8 r8 r4 r4 r8 g,8
 
-  % juf vroeg, wat is 3 + 3?
+  % juf vroeg, wat is drie plus drie?
   g4 g4 g4 g'8 e8~ e8 c4 c4 r4 e8
 
-  % De klas riep heel hard 4!
-  fis4 fis8 g4 a4 a8~ a4_\markup { \bold \large "(Nee, 6!)" } r4 r2
+  % De klas riep heel hard VIER!
+  fis4 fis8 g4 a4 a8~ a4_\markup { \bold \large "(Nee, zes!)" } r4 r2
 }
 
 verseTwoLyrics = \lyricmode {
@@ -109,8 +109,8 @@ verseTwoLyrics = \lyricmode {
 
   Op -- tel -- len bij het re -- ke -- nen,
   deed Guus met veel ple -- zier.
-  De juf vroeg, wat is "3" plus "3?"
-  De klas riep heel hard \markup \bold \huge "4!"
+  De juf vroeg, wat is drie plus drie?
+  De klas riep heel hard \markup \bold "VIER!"
 }
 
 verseThreeChords = \chordmode {
@@ -151,7 +151,7 @@ verseThreeMelody = \relative c' {
   g4 g4 g4 g'8 e8~
   e8 c4 r8 r4 r8 e8
 
-  % is Pi r-kwadraat!
+  % is PI R-KWADRAAT!
   fis4 fis8 g4 a4 a8~ a4_\markup { \bold \large "(Nee, 2 Pi r!)" } r4 r2
 }
 
@@ -167,7 +167,7 @@ verseThreeLyrics = \lyricmode {
   De vra -- gen wa -- ren te mak -- ke -- lijk.
   Je zag het aan zijn ge -- laat.
   De om -- trek van een cir -- kel,
-  dat is \markup \bold Pi \markup \bold r \markup \bold kwa -- \markup \bold draat!
+  dat is \markup \bold PI \markup \bold R \markup \bold KWA -- \markup \bold DRAAT!
 }
 
 chorusChords = \chordmode {
@@ -207,7 +207,7 @@ chorusMelody = \relative c' {
 }
 
 chorusLyrics = \lyricmode {
-  Ork ork ork. Soep eet je met een \markup \bold \large vork!
+  Ork ork ork. Soep eet je met een \markup \bold VORK!
   Ik had het kun -- nen we -- ten,
   maar was het toch ver -- ge -- ten.
 
@@ -262,7 +262,7 @@ chorusEndMelody = \relative c' {
 }
 
 chorusEndLyrics = \lyricmode {
-  Ork ork ork. Soep eet je met een \markup \bold vork.
+  Ork ork ork. Soep eet je met een \markup \bold VORK!
   Ik had het kun -- nen we -- ten,
   maar was het toch ver -- ge -- ten. De
 
